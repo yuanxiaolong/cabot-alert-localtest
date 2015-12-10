@@ -29,7 +29,7 @@ root@MacBook-Pro ~$ ll /tmp/ | grep cabot
   ```
 
 
-1. 编写配置文件,添加 插件名称（注意是下划线，不是工程名，而是里面的 模块名）
+1. 编写配置文件,添加 插件名称（注意是下划线，不是工程名，而是里面的 模块名，由setup.py里指定的）, 并修改 ```setup.py``` 内的相关信息
 
 ```
 vi conf/development.env
