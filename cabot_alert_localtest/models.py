@@ -1,7 +1,6 @@
 from django.db import models
 from cabot.cabotapp.alert import AlertPlugin, AlertPluginUserData
 import time
-import os
 
 class LocalTestAlert(AlertPlugin):
     name = "LocalTest"
@@ -11,7 +10,7 @@ class LocalTestAlert(AlertPlugin):
         """Implement your send_alert functionality here."""
 
         # time.strftime("%Y%m%d_%H%M%S",time.localtime(time.time()))
-        os.open('/tmp/cabotTestLocalAlert' + time.strftime("%Y%m%d_%H%M%S",time.localtime(time.time())),'a').close()
+        open('/tmp/cabotTestLocalAlert_' + time.strftime("%Y%m%d_%H%M%S",time.localtime(time.time())),'a').close()
 
         return
 
