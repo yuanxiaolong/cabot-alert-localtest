@@ -3,7 +3,7 @@ Cabot Localtest Plugin
 
 ## 简介
 
-根据 [https://github.com/lblasc/cabot-alert-slack](https://github.com/lblasc/cabot-alert-slack) 来做一个简单测试
+根据 [https://github.com/bonniejools/cabot-alert-skeleton](https://github.com/bonniejools/cabot-alert-skeleton) 来做一个简单测试
 
 效果：在 ```/tmp/``` 目录下 新建一个空文件 代表执行了报警逻辑，用于本地测试。
 
@@ -59,5 +59,5 @@ sh setup_dev.sh
 
 ## 插件编写
 
-不建议直接 clone 或 fork 此工程，因为此工程是测试工程。可以直接 fork 官方的「骨架工程」 [https://github.com/lblasc/cabot-alert-slack](https://github.com/lblasc/cabot-alert-slack)
+不建议直接 clone 或 fork 此工程，因为此工程是测试工程。可以直接 fork 官方的「骨架工程」 [https://github.com/bonniejools/cabot-alert-skeleton](https://github.com/bonniejools/cabot-alert-skeleton)
 然后自己新建个仓库，再cp必要文件过去，进行修改调试
