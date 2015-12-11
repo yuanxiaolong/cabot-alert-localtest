@@ -29,7 +29,7 @@ root@MacBook-Pro ~$ ll /tmp/ | grep cabot
   ```
 
 
-1. 编写配置文件,添加 插件名称（注意是下划线，不是工程名，而是里面的 模块名，由setup.py里指定的）, 并修改 ```setup.py``` 内的相关信息
+1.编写配置文件,添加 插件名称（注意是下划线，不是工程名，而是里面的 模块名，由setup.py里指定的）, 并修改 ```setup.py``` 内的相关信息
 
 ```
 vi conf/development.env
@@ -39,19 +39,19 @@ CABOT_PLUGINS_ENABLED=cabot_alert_hipchat==1.7.0,cabot_alert_twilio==1.6.1,cabot
 
 ```
 
-2. 通过 pip 安装自定义插件
+2.通过 pip 安装自定义插件
 
 ```
 pip install git+git://github.com/yuanxiaolong/cabot-alert-localtest.git
 ```
 
-3. 初始化数据库
+3.初始化数据库
 
 ```
 sh setup_dev.sh
 ```
 
-4. 无误后，启动 cabot
+4.无误后，启动 cabot
 
 ``` nohup foreman start & ```
 
